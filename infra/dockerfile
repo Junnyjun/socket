@@ -3,5 +3,5 @@ FROM openjdk:17
 ENV TZ=Asia/Seoul
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-COPY ./build/libs/*.jar deploy.jar
+COPY ../build/libs/*.jar deploy.jar
 ENTRYPOINT ["java","-jar","deploy.jar"]
