@@ -1,12 +1,11 @@
-#
-#spring:
-#  application:
-#    name: socket-server
-#
-#eureka:
-#  instance:
-#    hostname: localhost
-#  client:
-#    fetch-registry: false
-#    service-url:
-#      default-zone: http://http://144.24.87.198:8188//eureka
+
+spring:
+  application:
+    name: socket-server
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      default-zone: https://144.24.87.198:8188/eureka
