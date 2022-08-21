@@ -10,7 +10,7 @@ sudo docker rm $CONTAINER_NAME
 sudo docker rmi $IMAGE_NAME
 
 sudo docker build \
---tag $REGISTRY_HOST/$IMAGE_NAME:"$NUMBER" \
+-t $REGISTRY_HOST/$IMAGE_NAME:"$NUMBER" \
 .
 
 sudo docker run \
