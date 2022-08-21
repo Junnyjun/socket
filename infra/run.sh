@@ -15,4 +15,5 @@ sudo docker run \
 -p $PORT:8080 \
 --name $CONTAINER_NAME \
 --restart=always \
+-d \
 $IMAGE_NAME
