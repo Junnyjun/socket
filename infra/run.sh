@@ -12,3 +12,8 @@ sudo docker rmi $IMAGE_NAME
 sudo docker build \
 --tag $REGISTRY_HOST/$IMAGE_NAME:"$NUMBER" \
 .
+
+sudo docker run \
+-p $PORT:8080 \
+-name $CONTAINER_NAME \
+$IMAGE_NAME
