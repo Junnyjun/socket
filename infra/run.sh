@@ -2,14 +2,13 @@ CONTAINER_NAME=socket_container
 IMAGE_NAME=socket_image
 PORT=8088
 
-NUMBER=$1
 
 sudo docker stop $CONTAINER_NAME
 sudo docker rm $CONTAINER_NAME
 sudo docker rmi $IMAGE_NAME
 
 sudo docker build \
--t $IMAGE_NAME:"$NUMBER" \
+-t $IMAGE_NAME \
 .
 
 sudo docker run \
