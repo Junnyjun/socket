@@ -14,5 +14,5 @@ sudo docker build \
 
 sudo docker run \
 -p $PORT:8080 \
--name $CONTAINER_NAME \
+--name $CONTAINER_NAME \
 $IMAGE_NAME
